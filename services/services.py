@@ -28,25 +28,25 @@ def submit(data, pageName):
 
 
 def getStudents():
-    url = f"http://localhost:8000/getData/students"
+    url = "http://localhost:8000/getData/students"
     response = requests.request("GET", url)
     return response.json()
 
 
 def getAssignments():
-    url = f"http://localhost:8000/getData/assignment"
+    url = "http://localhost:8000/getData/assignment"
     response = requests.request("GET", url)
     return response.json()
 
 
 def getQuizzes():
-    url = f"http://localhost:8000/getData/quiz"
+    url = "http://localhost:8000/getData/quiz"
     response = requests.request("GET", url)
     return response.json()
 
 
 def getFeedback():
-    url = f"http://localhost:8000/getData/feedback"
+    url = "http://localhost:8000/getData/feedback"
     response = requests.request("GET", url)
     return response.json()
 
